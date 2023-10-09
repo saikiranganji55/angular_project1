@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nav-icon {
+    font-size: 30px;
+    padding: 10px;
+}
+
+.hide {
+    display: none;
+}
+
+.nav-brand-icon-cont {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .nav-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 5px;
+    }
+}
+
+@media (min-width: 768px) {
+    .nav-brand-icon-cont {
+        display: flex;
+    }
+}
+
+.nav-icon-con {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+    .nav-icon-con {
+        display: none;
+    }
+}
+
+.nav-links-con {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .nav-links-con {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 767px) {
+    .nav-links {
+        color: #ffdda9;
+        font-size: 16px;
+        font-family: "Open Sans";
+        border-top: #e7e5ea solid 2px;
+        text-decoration: none;
+        padding: 10px;
+    }
+}
+
+@media (min-width: 768px) {
+    .nav-links {
+        color: #12022f;
+        font-size: 16px;
+        font-family: "Open Sans";
+        font-weight: 700;
+        text-decoration: none;
+        padding: 10px;
+    }
+}
+
+.signup-btn {
+    color: #12022f;
+    font-weight: 700;
+    background-color: #ffdda9;
+    height: 28px;
+    width: 80px;
+    border-radius: 15px;
+    border-width: 0px;
+}
+
+.body-bg-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://assets.ccbp.in/frontend/intermediate-rwd/landing-page-sm-bg.png");
+    height: 100vh;
+    background-size: cover;
+}

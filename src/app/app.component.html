@@ -1,0 +1,45 @@
+
+<script>
+let navIconCon = document.getElementById("navIconCon");
+let iconBarEl = document.getElementById("iconBar");
+let iconXEl = document.getElementById("iconX");
+let navlinksCon = document.getElementById("navlinksCon");
+
+iconBarEl.classList.add("hide");
+navlinksCon.classList.add("hide");
+
+navIconCon.addEventListener("click", () => {
+    iconBarEl.classList.toggle("hide");
+    iconXEl.classList.toggle("hide"); 
+    navlinksCon.classList.toggle("nav-links-con");
+});
+</script>
+<nav class="navbar">
+  <div class="nav-container">
+      <div class="nav-brand-icon-cont">
+          <img class="logo" src="https://assets.ccbp.in/frontend/intermediate-rwd/landing-page-logo.png" />
+          <div class="nav-icon-con" id="navIconCon">
+              <span id="iconBar">
+                  <i class="fa fa-bars nav-icon"></i>
+              </span>
+              <span id="iconX">
+                  <i class="fas fa-times nav-icon"></i>
+              </span>
+          </div>
+      </div>
+      <div class="nav-links-con" id="navlinksCon">
+          <a href="#" class="nav-links">Features</a>
+          <a href="#" class="nav-links">About</a>
+          <a href="#" class="nav-links">Contact</a>
+          <div class="nav-links">
+              <button class="signup-btn">Sign Up</button>
+          </div>
+
+      </div>
+  </div>
+</nav>
+<div class="body-bg-container">
+  <h1 class="heading">
+      A Student Startup Acceleration Program!
+  </h1>
+</div>
